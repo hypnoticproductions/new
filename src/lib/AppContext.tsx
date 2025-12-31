@@ -3,6 +3,8 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { UserPreferences, Alert, SafetyData } from '@/types';
 import { getAllCountries, getSafetyData, getRecentIncidents, getRecommendations, getNewsFeed } from '@/lib/mock-gdelt';
+import { appStorage } from '@/lib/safe-storage';
+import { errorHandler } from '@/lib/error-handler';
 
 interface AppContextType {
   // Theme
@@ -37,7 +39,7 @@ interface AppContextType {
     recommendations: ReturnType<typeof getRecommendations>;
     newsFeed: ReturnType<typeof getNewsFeed>;
   };
-  loadDestinationData: (countryCode: string) => void;
+  loadDestinationData: (countryCode: string) => Promise<void>;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -48,7 +50,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
-    const stored = localStorage.getItem('safetravel-theme') as UserPreferences['theme'] | null;
+    const stored = appStorage.get('theme') as UserPreferences['theme'] | null;
     if (stored) {
       setTheme(stored);
     }
@@ -74,7 +76,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', resolvedTheme === 'dark');
-    localStorage.setItem('safetravel-theme', theme);
+    appStorage.set('theme', theme);
   }, [resolvedTheme, theme]);
 
   // Countries data
@@ -82,8 +84,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [selectedCountry, setSelectedCountry] = useState<SafetyData | null>(null);
 
   useEffect(() => {
-    const data = getAllCountries();
-    setCountries(data);
+    const loadCountries = async () => {
+      try {
+        const data = getAllCountries();
+        setCountries(data);
+      } catch (error) {
+        await errorHandler.handleError(error, 'AppContext.loadCountries');
+        setCountries([]); // Fallback to empty array
+      }
+    };
+
+    loadCountries();
   }, []);
 
   // Current destination data
@@ -94,14 +105,25 @@ export function AppProvider({ children }: { children: ReactNode }) {
     newsFeed: [],
   });
 
-  const loadDestinationData = (countryCode: string) => {
-    const safetyData = getSafetyData(countryCode);
-    if (safetyData) {
+  const loadDestinationData = async (countryCode: string) => {
+    try {
+      const safetyData = getSafetyData(countryCode);
+      if (safetyData) {
+        setCurrentDestinationData({
+          safetyData,
+          incidents: getRecentIncidents(countryCode),
+          recommendations: getRecommendations(safetyData),
+          newsFeed: getNewsFeed(countryCode),
+        });
+      }
+    } catch (error) {
+      await errorHandler.handleError(error, 'AppContext.loadDestinationData');
+      // Keep previous data or reset to null
       setCurrentDestinationData({
-        safetyData,
-        incidents: getRecentIncidents(countryCode),
-        recommendations: getRecommendations(safetyData),
-        newsFeed: getNewsFeed(countryCode),
+        safetyData: null,
+        incidents: [],
+        recommendations: [],
+        newsFeed: [],
       });
     }
   };
@@ -161,22 +183,22 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [watchedDestinations, setWatchedDestinations] = useState<string[]>([]);
 
   useEffect(() => {
-    const stored = localStorage.getItem('safetravel-watched');
+    const stored = appStorage.getJSON<string[]>('watched', []);
     if (stored) {
-      setWatchedDestinations(JSON.parse(stored));
+      setWatchedDestinations(stored);
     }
   }, []);
 
   const addWatchedDestination = (countryCode: string) => {
     const updated = [...watchedDestinations, countryCode];
     setWatchedDestinations(updated);
-    localStorage.setItem('safetravel-watched', JSON.stringify(updated));
+    appStorage.setJSON('watched', updated);
   };
 
   const removeWatchedDestination = (countryCode: string) => {
     const updated = watchedDestinations.filter((c) => c !== countryCode);
     setWatchedDestinations(updated);
-    localStorage.setItem('safetravel-watched', JSON.stringify(updated));
+    appStorage.setJSON('watched', updated);
   };
 
   // Loading state
