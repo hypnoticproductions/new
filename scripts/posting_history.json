@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "postNumber": 1,
+      "title": "Post 1",
+      "lastPostedAt": "2026-02-01T22:08:11.520Z",
+      "postCount": 2,
+      "substackUrl": "https://example.com/dry-run-1",
+      "twitterUrl": "https://twitter.com/user/status/dry-run-1"
+    },
+    {
+      "id": 2,
+      "postNumber": 2,
+      "title": "Post 2",
+      "lastPostedAt": "2026-02-01T22:08:26.524Z",
+      "postCount": 2,
+      "substackUrl": "https://example.com/dry-run-2",
+      "twitterUrl": "https://twitter.com/user/status/dry-run-2"
+    },
+    {
+      "id": 3,
+      "postNumber": 3,
+      "title": "Post 3",
+      "lastPostedAt": null,
+      "postCount": 0,
+      "substackUrl": null,
+      "twitterUrl": null
+    },
+    {
+      "id": 4,
+      "postNumber": 4,
+      "title": "Post 4",
+      "lastPostedAt": null,
+      "postCount": 0,
+      "substackUrl": null,
+      "twitterUrl": null
+    },
+    {
+      "id": 5,
+      "postNumber": 5,
+      "title": "Post 5",
+      "lastPostedAt": null,
+      "postCount": 0,
+      "substackUrl": null,
+      "twitterUrl": null
+    },
+    {
+      "id": 6,
+      "postNumber": 6,
+      "title": "Post 6",
+      "lastPostedAt": null,
+      "postCount": 0,
+      "substackUrl": null,
+      "twitterUrl": null
+    }
+  ],
+  "history": [
+    {
+      "postId": 1,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-1",
+      "status": "success",
+      "postedAt": "2026-02-01T22:08:06.512Z"
+    },
+    {
+      "postId": 1,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-1",
+      "status": "success",
+      "postedAt": "2026-02-01T22:08:11.520Z"
+    },
+    {
+      "postId": 2,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-2",
+      "status": "success",
+      "postedAt": "2026-02-01T22:08:21.521Z"
+    },
+    {
+      "postId": 2,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-2",
+      "status": "success",
+      "postedAt": "2026-02-01T22:08:26.525Z"
+    }
+  ]
+}
