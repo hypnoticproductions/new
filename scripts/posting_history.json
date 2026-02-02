@@ -22,19 +22,19 @@
       "id": 3,
       "postNumber": 3,
       "title": "Post 3",
-      "lastPostedAt": null,
-      "postCount": 0,
-      "substackUrl": null,
-      "twitterUrl": null
+      "lastPostedAt": "2026-02-02T13:05:02.667Z",
+      "postCount": 4,
+      "substackUrl": "https://richarddannibarrifortune.substack.com/p/social-media-roi-which-platforms-drive-caribbean-tourism-bookings",
+      "twitterUrl": "https://twitter.com/user/status/1770037502667"
     },
     {
       "id": 4,
       "postNumber": 4,
       "title": "Post 4",
-      "lastPostedAt": null,
-      "postCount": 0,
-      "substackUrl": null,
-      "twitterUrl": null
+      "lastPostedAt": "2026-02-02T13:05:07.674Z",
+      "postCount": 4,
+      "substackUrl": "https://richarddannibarrifortune.substack.com/p/why-eco-certification-increases-caribbean-tourism-revenue-by-31",
+      "twitterUrl": "https://twitter.com/user/status/1770037507673"
     },
     {
       "id": 5,
@@ -83,6 +83,62 @@
       "url": "https://twitter.com/user/status/dry-run-2",
       "status": "success",
       "postedAt": "2026-02-01T22:08:26.525Z"
+    },
+    {
+      "postId": 3,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-3",
+      "status": "success",
+      "postedAt": "2026-02-02T13:03:24.374Z"
+    },
+    {
+      "postId": 3,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-3",
+      "status": "success",
+      "postedAt": "2026-02-02T13:03:29.379Z"
+    },
+    {
+      "postId": 4,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-4",
+      "status": "success",
+      "postedAt": "2026-02-02T13:03:39.379Z"
+    },
+    {
+      "postId": 4,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-4",
+      "status": "success",
+      "postedAt": "2026-02-02T13:03:44.386Z"
+    },
+    {
+      "postId": 3,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/social-media-roi-which-platforms-drive-caribbean-tourism-bookings",
+      "status": "success",
+      "postedAt": "2026-02-02T13:05:02.667Z"
+    },
+    {
+      "postId": 3,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/1770037502667",
+      "status": "success",
+      "postedAt": "2026-02-02T13:05:02.667Z"
+    },
+    {
+      "postId": 4,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/why-eco-certification-increases-caribbean-tourism-revenue-by-31",
+      "status": "success",
+      "postedAt": "2026-02-02T13:05:07.673Z"
+    },
+    {
+      "postId": 4,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/1770037507673",
+      "status": "success",
+      "postedAt": "2026-02-02T13:05:07.674Z"
     }
   ]
 }
