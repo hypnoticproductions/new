@@ -40,19 +40,19 @@
       "id": 5,
       "postNumber": 5,
       "title": "Post 5",
-      "lastPostedAt": null,
-      "postCount": 0,
-      "substackUrl": null,
-      "twitterUrl": null
+      "lastPostedAt": "2026-02-02T17:05:10.205Z",
+      "postCount": 2,
+      "substackUrl": "https://richarddannibarrifortune.substack.com/p/solving-the-caribbean-tourism-labor-shortage-strategies-that-work",
+      "twitterUrl": "https://twitter.com/user/status/1770051910205"
     },
     {
       "id": 6,
       "postNumber": 6,
       "title": "Post 6",
-      "lastPostedAt": null,
-      "postCount": 0,
-      "substackUrl": null,
-      "twitterUrl": null
+      "lastPostedAt": "2026-02-02T17:05:15.212Z",
+      "postCount": 2,
+      "substackUrl": "https://richarddannibarrifortune.substack.com/p/2026-tourism-technology-essential-tools-for-caribbean-operators",
+      "twitterUrl": "https://twitter.com/user/status/1770051915212"
     }
   ],
   "history": [
@@ -139,6 +139,34 @@
       "url": "https://twitter.com/user/status/1770037507673",
       "status": "success",
       "postedAt": "2026-02-02T13:05:07.674Z"
+    },
+    {
+      "postId": 5,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/solving-the-caribbean-tourism-labor-shortage-strategies-that-work",
+      "status": "success",
+      "postedAt": "2026-02-02T17:05:10.205Z"
+    },
+    {
+      "postId": 5,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/1770051910205",
+      "status": "success",
+      "postedAt": "2026-02-02T17:05:10.205Z"
+    },
+    {
+      "postId": 6,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/2026-tourism-technology-essential-tools-for-caribbean-operators",
+      "status": "success",
+      "postedAt": "2026-02-02T17:05:15.211Z"
+    },
+    {
+      "postId": 6,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/1770051915212",
+      "status": "success",
+      "postedAt": "2026-02-02T17:05:15.212Z"
     }
   ]
 }
