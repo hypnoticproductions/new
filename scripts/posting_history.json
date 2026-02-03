@@ -4,8 +4,8 @@
       "id": 1,
       "postNumber": 1,
       "title": "Post 1",
-      "lastPostedAt": "2026-02-01T22:08:11.520Z",
-      "postCount": 2,
+      "lastPostedAt": "2026-02-03T13:09:16.157Z",
+      "postCount": 4,
       "substackUrl": "https://example.com/dry-run-1",
       "twitterUrl": "https://twitter.com/user/status/dry-run-1"
     },
@@ -13,8 +13,8 @@
       "id": 2,
       "postNumber": 2,
       "title": "Post 2",
-      "lastPostedAt": "2026-02-01T22:08:26.524Z",
-      "postCount": 2,
+      "lastPostedAt": "2026-02-03T13:09:31.162Z",
+      "postCount": 4,
       "substackUrl": "https://example.com/dry-run-2",
       "twitterUrl": "https://twitter.com/user/status/dry-run-2"
     },
@@ -40,19 +40,19 @@
       "id": 5,
       "postNumber": 5,
       "title": "Post 5",
-      "lastPostedAt": "2026-02-02T17:05:10.205Z",
-      "postCount": 2,
-      "substackUrl": "https://richarddannibarrifortune.substack.com/p/solving-the-caribbean-tourism-labor-shortage-strategies-that-work",
-      "twitterUrl": "https://twitter.com/user/status/1770051910205"
+      "lastPostedAt": "2026-02-03T13:10:08.870Z",
+      "postCount": 4,
+      "substackUrl": "https://example.com/dry-run-5",
+      "twitterUrl": "https://twitter.com/user/status/dry-run-5"
     },
     {
       "id": 6,
       "postNumber": 6,
       "title": "Post 6",
-      "lastPostedAt": "2026-02-02T17:05:15.212Z",
-      "postCount": 2,
-      "substackUrl": "https://richarddannibarrifortune.substack.com/p/2026-tourism-technology-essential-tools-for-caribbean-operators",
-      "twitterUrl": "https://twitter.com/user/status/1770051915212"
+      "lastPostedAt": "2026-02-03T13:10:23.875Z",
+      "postCount": 4,
+      "substackUrl": "https://example.com/dry-run-6",
+      "twitterUrl": "https://twitter.com/user/status/dry-run-6"
     }
   ],
   "history": [
@@ -167,6 +167,62 @@
       "url": "https://twitter.com/user/status/1770051915212",
       "status": "success",
       "postedAt": "2026-02-02T17:05:15.212Z"
+    },
+    {
+      "postId": 1,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-1",
+      "status": "success",
+      "postedAt": "2026-02-03T13:09:11.151Z"
+    },
+    {
+      "postId": 1,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-1",
+      "status": "success",
+      "postedAt": "2026-02-03T13:09:16.157Z"
+    },
+    {
+      "postId": 2,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-2",
+      "status": "success",
+      "postedAt": "2026-02-03T13:09:26.158Z"
+    },
+    {
+      "postId": 2,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-2",
+      "status": "success",
+      "postedAt": "2026-02-03T13:09:31.162Z"
+    },
+    {
+      "postId": 5,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-5",
+      "status": "success",
+      "postedAt": "2026-02-03T13:10:03.865Z"
+    },
+    {
+      "postId": 5,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-5",
+      "status": "success",
+      "postedAt": "2026-02-03T13:10:08.870Z"
+    },
+    {
+      "postId": 6,
+      "platform": "substack",
+      "url": "https://example.com/dry-run-6",
+      "status": "success",
+      "postedAt": "2026-02-03T13:10:18.871Z"
+    },
+    {
+      "postId": 6,
+      "platform": "twitter",
+      "url": "https://twitter.com/user/status/dry-run-6",
+      "status": "success",
+      "postedAt": "2026-02-03T13:10:23.875Z"
     }
   ]
 }
