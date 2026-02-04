@@ -42,3 +42,8 @@ coverage/
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Caribbean Tourism Syndication
+logs/
+.substack-session.json
+.twitter-session.json
