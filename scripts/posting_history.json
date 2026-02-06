@@ -40,8 +40,8 @@
       "id": 5,
       "postNumber": 5,
       "title": "Post 5",
-      "lastPostedAt": "2026-02-04T13:07:42.921Z",
-      "postCount": 6,
+      "lastPostedAt": "2026-02-06T13:07:21.370Z",
+      "postCount": 8,
       "substackUrl": "https://richarddannibarrifortune.substack.com/p/solving-the-caribbean-tourism-labor-shortage-strategies-that-work",
       "twitterUrl": "https://x.com/user/status/dry-run-5"
     },
@@ -49,8 +49,8 @@
       "id": 6,
       "postNumber": 6,
       "title": "Post 6",
-      "lastPostedAt": "2026-02-04T13:07:57.929Z",
-      "postCount": 6,
+      "lastPostedAt": "2026-02-06T13:07:21.441Z",
+      "postCount": 8,
       "substackUrl": "https://richarddannibarrifortune.substack.com/p/2026-tourism-technology-essential-tools-for-caribbean-operators",
       "twitterUrl": "https://x.com/user/status/dry-run-6"
     }
@@ -363,6 +363,34 @@
       "url": "https://x.com/user/status/dry-run-2",
       "status": "success",
       "postedAt": "2026-02-05T22:04:18.633Z"
+    },
+    {
+      "postId": 5,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/solving-the-caribbean-tourism-labor-shortage-strategies-that-work",
+      "status": "success",
+      "postedAt": "2026-02-06T13:07:21.331Z"
+    },
+    {
+      "postId": 5,
+      "platform": "twitter",
+      "url": "https://x.com/user/status/dry-run-5",
+      "status": "success",
+      "postedAt": "2026-02-06T13:07:21.370Z"
+    },
+    {
+      "postId": 6,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/2026-tourism-technology-essential-tools-for-caribbean-operators",
+      "status": "success",
+      "postedAt": "2026-02-06T13:07:21.406Z"
+    },
+    {
+      "postId": 6,
+      "platform": "twitter",
+      "url": "https://x.com/user/status/dry-run-6",
+      "status": "success",
+      "postedAt": "2026-02-06T13:07:21.441Z"
     }
   ]
 }
