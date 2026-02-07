@@ -4,8 +4,8 @@
       "id": 1,
       "postNumber": 1,
       "title": "Post 1",
-      "lastPostedAt": "2026-02-05T22:04:18.565Z",
-      "postCount": 8,
+      "lastPostedAt": "2026-02-07T13:04:36.540Z",
+      "postCount": 9,
       "substackUrl": "https://richarddannibarrifortune.substack.com/p/caribbean-tourism-shows-strong-recovery-in-q1-2026",
       "twitterUrl": "https://x.com/user/status/dry-run-1"
     },
@@ -13,8 +13,8 @@
       "id": 2,
       "postNumber": 2,
       "title": "Post 2",
-      "lastPostedAt": "2026-02-05T22:04:18.633Z",
-      "postCount": 8,
+      "lastPostedAt": "2026-02-07T13:04:36.542Z",
+      "postCount": 9,
       "substackUrl": "https://richarddannibarrifortune.substack.com/p/hurricane-season-2026-essential-crisis-communication-strategies",
       "twitterUrl": "https://x.com/user/status/dry-run-2"
     },
@@ -419,6 +419,34 @@
       "url": "https://x.com/user/status/dry-run-4",
       "status": "success",
       "postedAt": "2026-02-06T17:07:54.636Z"
+    },
+    {
+      "postId": 1,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/caribbean-tourism-shows-strong-recovery-in-q1-2026",
+      "status": "success",
+      "postedAt": "2026-02-07T13:04:36.538Z"
+    },
+    {
+      "postId": 1,
+      "platform": "twitter",
+      "url": "https://x.com/user/status/dry-run-1",
+      "status": "success",
+      "postedAt": "2026-02-07T13:04:36.540Z"
+    },
+    {
+      "postId": 2,
+      "platform": "substack",
+      "url": "https://richarddannibarrifortune.substack.com/p/hurricane-season-2026-essential-crisis-communication-strategies",
+      "status": "success",
+      "postedAt": "2026-02-07T13:04:36.541Z"
+    },
+    {
+      "postId": 2,
+      "platform": "twitter",
+      "url": "https://x.com/user/status/dry-run-2",
+      "status": "success",
+      "postedAt": "2026-02-07T13:04:36.542Z"
     }
   ]
 }
